@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+.container{width:160px;
+height:180px;
+margin:50px auto;
+text-align:center}
+.btn{width:50px;
+height:50px;
+font-weight:bold;
+font-size:18px;
+border-radius:50%;
+outline:none;
+border:1px solid blue}
+.btn:active{
+background:rgba(0,0,0,0.5)
+}
+
+.btnOn{background:red;
+color:#fff}
+.btnOff{background:green;
+color:#fff}
+</style>
+</head>
+<body bgcolor="black">
+
+<div class="container">
+<img id="img" src="lightOff.jpg" width="150px">
+<button class="btn btnOn" onclick="btnOn()">On</button>
+<button class="btn btnOff" onclick="btnOff()">Off</button>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+function btnOn(){
+var img = document.getElementById('img');
+img.src="lightOn.png"
+}
+
+
+function btnOff(){
+var img = document.getElementById('img');
+img.src="lightOff.jpg"
+}
+</script>
+</html>
